@@ -19,11 +19,11 @@ class OrderBookSection extends StatelessWidget {
             children: [
               Text(
                 LocaleKeys.bid.tr(),
-                style: Theme.of(context).textTheme.subtitle2,
+                style: Theme.of(context).textTheme.titleSmall,
               ),
               Text(
                 LocaleKeys.ask.tr(),
-                style: Theme.of(context).textTheme.subtitle2,
+                style: Theme.of(context).textTheme.titleSmall,
               )
             ],
           ),
@@ -46,11 +46,11 @@ class OrderBookSection extends StatelessWidget {
                           children: [
                             Text(
                               data.bids[index].amount.toString(),
-                              style: Theme.of(context).textTheme.subtitle1,
+                              style: Theme.of(context).textTheme.titleMedium,
                             ),
                             Text(
                               data.bids[index].price.toString(),
-                              style: Theme.of(context).textTheme.subtitle1,
+                              style: Theme.of(context).textTheme.titleMedium,
                             )
                           ],
                         ),
@@ -73,11 +73,11 @@ class OrderBookSection extends StatelessWidget {
                           children: [
                             Text(
                               data.asks[index].amount.toString(),
-                              style: Theme.of(context).textTheme.subtitle1,
+                              style: Theme.of(context).textTheme.titleMedium,
                             ),
                             Text(
                               data.asks[index].price.toString(),
-                              style: Theme.of(context).textTheme.subtitle1,
+                              style: Theme.of(context).textTheme.titleMedium,
                             )
                           ],
                         ),

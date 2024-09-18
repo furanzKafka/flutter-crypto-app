@@ -29,8 +29,8 @@ class DetailsWidget extends HookConsumerWidget {
           TabBar(
             labelColor: Theme.of(context).focusColor,
             unselectedLabelColor: Theme.of(context).unselectedWidgetColor,
-            unselectedLabelStyle: Theme.of(context).textTheme.headline4,
-            labelStyle: Theme.of(context).textTheme.headline4,
+            unselectedLabelStyle: Theme.of(context).textTheme.headlineMedium,
+            labelStyle: Theme.of(context).textTheme.headlineMedium,
             indicatorWeight: 4,
             indicatorSize: TabBarIndicatorSize.label,
             indicatorColor: Theme.of(context).focusColor,

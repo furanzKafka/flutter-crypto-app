@@ -50,7 +50,7 @@ class PairTile extends HookConsumerWidget {
                             minFontSize: 0,
                             stepGranularity: 0.1,
                             maxLines: 1,
-                            style: Theme.of(context).textTheme.headline5),
+                            style: Theme.of(context).textTheme.headlineSmall),
                       ),
                     ),
                     Expanded(
@@ -80,7 +80,7 @@ class PairTile extends HookConsumerWidget {
                             AutoSizeText(
                               summary.price.last.toStringAsFixed(2),
                               minFontSize: 10,
-                              style: Theme.of(context).textTheme.headline5,
+                              style: Theme.of(context).textTheme.headlineSmall,
                             ),
                             SizedBox(
                               height: 5,
@@ -98,7 +98,7 @@ class PairTile extends HookConsumerWidget {
                                         maxLines: 1,
                                         style: Theme.of(context)
                                             .textTheme
-                                            .headline5!
+                                            .headlineSmall!
                                             .apply(
                                                 color: summary.price.change
                                                             .absolute >=
@@ -114,7 +114,7 @@ class PairTile extends HookConsumerWidget {
                                       maxLines: 1,
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headline6),
+                                          .titleLarge),
                                 ]),
                           ],
                         ),

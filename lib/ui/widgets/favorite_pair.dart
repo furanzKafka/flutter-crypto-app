@@ -49,7 +49,7 @@ class FavoritePairWidget extends HookWidget {
                   ),
                   SizedBox(width: 10),
                   Text(LocaleKeys.openChart.tr(),
-                      style: Theme.of(context).textTheme.headline3),
+                      style: Theme.of(context).textTheme.displaySmall),
                 ],
               ),
             ),

@@ -17,7 +17,7 @@ class SummarySection extends StatelessWidget {
             children: [
               Text(
                 LocaleKeys.price.tr(),
-                style: Theme.of(context).textTheme.subtitle2,
+                style: Theme.of(context).textTheme.titleSmall,
               )
             ],
           ),
@@ -27,11 +27,11 @@ class SummarySection extends StatelessWidget {
             children: [
               Text(
                 LocaleKeys.last.tr(),
-                style: Theme.of(context).textTheme.subtitle1,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
               Text(
                 data.price.last.toString(),
-                style: Theme.of(context).textTheme.subtitle1,
+                style: Theme.of(context).textTheme.titleMedium,
               )
             ],
           ),
@@ -41,11 +41,11 @@ class SummarySection extends StatelessWidget {
             children: [
               Text(
                 LocaleKeys.high.tr(),
-                style: Theme.of(context).textTheme.subtitle1,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
               Text(
                 data.price.high.toString(),
-                style: Theme.of(context).textTheme.subtitle1,
+                style: Theme.of(context).textTheme.titleMedium,
               )
             ],
           ),
@@ -55,11 +55,11 @@ class SummarySection extends StatelessWidget {
             children: [
               Text(
                 LocaleKeys.low.tr(),
-                style: Theme.of(context).textTheme.subtitle1,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
               Text(
                 data.price.low.toString(),
-                style: Theme.of(context).textTheme.subtitle1,
+                style: Theme.of(context).textTheme.titleMedium,
               )
             ],
           ),
@@ -69,11 +69,11 @@ class SummarySection extends StatelessWidget {
             children: [
               Text(
                 LocaleKeys.change.tr(),
-                style: Theme.of(context).textTheme.subtitle1,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
               Text(
                 data.price.change.absolute.toString(),
-                style: Theme.of(context).textTheme.subtitle1,
+                style: Theme.of(context).textTheme.titleMedium,
               )
             ],
           ),
@@ -82,7 +82,7 @@ class SummarySection extends StatelessWidget {
             children: [
               Text(
                 LocaleKeys.volume.tr(),
-                style: Theme.of(context).textTheme.subtitle2,
+                style: Theme.of(context).textTheme.titleSmall,
               )
             ],
           ),
@@ -92,11 +92,11 @@ class SummarySection extends StatelessWidget {
             children: [
               Text(
                 LocaleKeys.volume.tr(),
-                style: Theme.of(context).textTheme.subtitle1,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
               Text(
                 data.volume.toString(),
-                style: Theme.of(context).textTheme.subtitle1,
+                style: Theme.of(context).textTheme.titleMedium,
               )
             ],
           ),
@@ -106,11 +106,11 @@ class SummarySection extends StatelessWidget {
             children: [
               Text(
                 LocaleKeys.quoteVolume.tr(),
-                style: Theme.of(context).textTheme.subtitle1,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
               Text(
                 data.volumeQuote.toString(),
-                style: Theme.of(context).textTheme.subtitle1,
+                style: Theme.of(context).textTheme.titleMedium,
               )
             ],
           ),

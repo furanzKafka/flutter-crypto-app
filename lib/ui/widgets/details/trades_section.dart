@@ -19,21 +19,21 @@ class TradesSection extends StatelessWidget {
               Expanded(
                 child: Text(
                   LocaleKeys.time.tr(),
-                  style: Theme.of(context).textTheme.subtitle2,
+                  style: Theme.of(context).textTheme.titleSmall,
                 ),
               ),
               Expanded(
                 child: Text(
                   LocaleKeys.price.tr(),
                   textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.subtitle2,
+                  style: Theme.of(context).textTheme.titleSmall,
                 ),
               ),
               Expanded(
                 child: Text(
                   LocaleKeys.amount.tr(),
                   textAlign: TextAlign.right,
-                  style: Theme.of(context).textTheme.subtitle2,
+                  style: Theme.of(context).textTheme.titleSmall,
                 ),
               )
             ],
@@ -54,7 +54,7 @@ class TradesSection extends StatelessWidget {
                           flex: 1,
                           child: Text(
                             Utils.epochToString(data[index].timestamp),
-                            style: Theme.of(context).textTheme.subtitle1,
+                            style: Theme.of(context).textTheme.titleMedium,
                           ),
                         ),
                         Expanded(
@@ -62,7 +62,7 @@ class TradesSection extends StatelessWidget {
                           child: Text(
                             data[index].price,
                             textAlign: TextAlign.center,
-                            style: Theme.of(context).textTheme.subtitle1,
+                            style: Theme.of(context).textTheme.titleMedium,
                           ),
                         ),
                         Expanded(
@@ -70,7 +70,7 @@ class TradesSection extends StatelessWidget {
                           child: Text(
                             data[index].amount,
                             textAlign: TextAlign.right,
-                            style: Theme.of(context).textTheme.subtitle1,
+                            style: Theme.of(context).textTheme.titleMedium,
                           ),
                         )
                       ],

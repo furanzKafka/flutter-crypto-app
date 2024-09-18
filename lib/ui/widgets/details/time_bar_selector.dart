@@ -31,9 +31,9 @@ class TimeBarSelector extends HookConsumerWidget {
                                 e.name
                             ? Theme.of(context)
                                 .textTheme
-                                .headline3!
+                                .displaySmall!
                                 .apply(color: Colors.white)
-                            : Theme.of(context).textTheme.headline4,
+                            : Theme.of(context).textTheme.headlineMedium,
                       ),
                     ),
                   ),

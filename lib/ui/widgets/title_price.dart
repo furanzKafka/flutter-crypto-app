@@ -21,9 +21,9 @@ class TitlePrice extends HookConsumerWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               AutoSizeText(pair.pair,
-                  maxLines: 1, style: Theme.of(context).textTheme.headline2),
+                  maxLines: 1, style: Theme.of(context).textTheme.displayMedium),
               AutoSizeText(data.price.last.toString(),
-                  maxLines: 1, style: Theme.of(context).textTheme.headline1),
+                  maxLines: 1, style: Theme.of(context).textTheme.displayLarge),
               if (true)
                 Row(children: [
                   AutoSizeText(data.price.change.absolute.toStringAsFixed(5),
@@ -36,7 +36,7 @@ class TitlePrice extends HookConsumerWidget {
                               ? Colors.green
                               : Colors.red,
                           fontSize:
-                              Theme.of(context).textTheme.headline5?.fontSize,
+                              Theme.of(context).textTheme.headlineSmall?.fontSize,
                           fontWeight: FontWeight.w800)),
                   AutoSizeText(
                       ' (${data.price.change.percentage.toStringAsFixed(2)}%)',
@@ -44,7 +44,7 @@ class TitlePrice extends HookConsumerWidget {
                       minFontSize: 0,
                       stepGranularity: 0.1,
                       maxLines: 1,
-                      style: Theme.of(context).textTheme.headline4),
+                      style: Theme.of(context).textTheme.headlineMedium),
                 ]),
             ],
           ),

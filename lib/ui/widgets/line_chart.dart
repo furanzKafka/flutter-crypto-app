@@ -41,7 +41,7 @@ class LineChartWidget extends StatelessWidget {
       else if (error || data.length == 0)
         Center(
           child: Text(LocaleKeys.noResults.tr(),
-              style: Theme.of(context).textTheme.headline3),
+              style: Theme.of(context).textTheme.displaySmall),
         )
     ]);
   }
